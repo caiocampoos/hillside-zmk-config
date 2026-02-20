@@ -74,13 +74,13 @@
         adj_layer {
 /* ADJUST
  * ----------------------------------------------------------------------------------------------------------------------------------------
- * |       | BT 0  | BT 1  | BT 2  | BT 3  | BT 4  |-----------------------------------|       |       |       |       |       |BT CLEAR|
+ * |       | BT 0  | BT 1  | BT 2  | BT 3  | BT 4  |-----------------------------------|       |       |       |       |BT CLR |BT CLRALL
  * |       |       |       |       |       |       |-----------------------------------|       |       |       |       |       |       |
  * | BOOTL | RESET |       |       |       |       |BT NEXT|-------------------|BT PREV|       |       |       |       |       |       |
  * -------------------|       |-------|       |       |       |       |---|       |       |       |       |-------|       |----------------
  */
             bindings = <
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                          &none   &none   &none  &none  &none  &bt BT_CLR_ALL
+&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                          &none   &none   &none  &none  &bt BT_CLR  &bt BT_CLR_ALL
 &none        &none         &none         &none         &none         &none                                                 &none   &none   &none  &none  &none  &none
 &bootloader  &sys_reset    &none         &none         &none         &none         &bt BT_NXT                  &bt BT_PRV  &none   &none   &none  &none  &none  &none
                            &trans                      &trans        &trans        &trans      &trans  &trans  &trans      &trans  &trans         &none
