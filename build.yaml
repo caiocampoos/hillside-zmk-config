@@ -16,5 +16,6 @@ include:
   # Hillside 48 - using new ZMK board naming convention (Zephyr 4.1+)
   - board: nice_nano//zmk
     shield: hillside48_left
+    snippet: zmk-usb-logging
   - board: nice_nano//zmk
     shield: hillside48_right
